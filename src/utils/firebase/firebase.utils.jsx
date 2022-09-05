@@ -9,13 +9,14 @@ import {
 import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyDDU4V-_QV3M8GyhC9SVieRTDM4dbiT0Yk',
-  authDomain: 'crwn-clothing-db-98d4d.firebaseapp.com',
-  projectId: 'crwn-clothing-db-98d4d',
-  storageBucket: 'crwn-clothing-db-98d4d.appspot.com',
-  messagingSenderId: '626766232035',
-  appId: '1:626766232035:web:506621582dab103a4d08d6',
+  apiKey: "AIzaSyAlU35qj0efEIdQFGzQqVT_juP1lVIpgwA",
+  authDomain: "crwn-db-4bdaf.firebaseapp.com",
+  projectId: "crwn-db-4bdaf",
+  storageBucket: "crwn-db-4bdaf.appspot.com",
+  messagingSenderId: "673203952547",
+  appId: "1:673203952547:web:95f4322e8fad4d1c789816"
 };
+
 
 const firebaseApp = initializeApp(firebaseConfig);
 
@@ -30,6 +31,7 @@ export const signInWithGooglePopup = () =>
   signInWithPopup(auth, googleProvider);
 export const signInWithGoogleRedirect = () =>
   signInWithRedirect(auth, googleProvider);
+  
 
 export const db = getFirestore();
 
